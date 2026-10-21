@@ -27,3 +27,8 @@ b = int(input())
 # TODO: выведите сумму, разность и произведение
 # TODO: затем частное, округлённое до трёх знаков: round(a / b, 3)
 
+print(a + b)
+print(a - b)
+print(a * b)
+print(round(a / b, 3))
+

@@ -27,3 +27,9 @@ print(f"Имя: {name}, возраст: {age}")
 
 # TODO: выведите две строки, используя f-строки
 
+name = input() 
+age = int(input())
+
+print(f'Имя: {name}, возраст: {age}')
+print(f'Год рождения: {2026 - age}')
+

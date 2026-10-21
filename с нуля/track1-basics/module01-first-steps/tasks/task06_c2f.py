@@ -20,3 +20,8 @@
 
 # TODO: вычислите f по формуле и выведите round(f, 1)
 
+c = float(input())
+
+f = c * 9 / 5 + 32
+
+print(round(f, 1))

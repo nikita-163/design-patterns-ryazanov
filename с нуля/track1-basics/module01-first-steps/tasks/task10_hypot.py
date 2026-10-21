@@ -22,8 +22,13 @@ math (не возводите в степень вручную).
 import math
 print("Гипотенуза:", round(math.hypot(a, b), 3))
 """
-
+import math
 # TODO: прочитайте катеты a и b
+a = float(input())
+b = float(input())
 
 # TODO: импортируйте math и выведите гипотенузу с округлением до 3 знаков
+
+print("Гипотенуза:", round(math.hypot(a, b), 3))
+
 
