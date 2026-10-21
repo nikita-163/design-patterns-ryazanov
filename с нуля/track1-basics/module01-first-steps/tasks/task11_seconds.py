@@ -22,8 +22,13 @@
 Удобно применить divmod дважды: сначала к общему числу секунд и 3600,
 затем к остатку и 60.
 """
-
 # TODO: прочитайте число секунд
+total_seconds = int(input())
 
 # TODO: выведите часы, минуты и секунды с подписями
+hours, rest = divmod(total_seconds, 3600)
+minutes, seconds = divmod(rest, 60)
 
+print(f'Часов: {hours}')
+print(f'Минут: {minutes}')
+print(f'Секунд: {seconds}')

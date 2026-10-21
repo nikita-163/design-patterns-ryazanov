@@ -26,6 +26,15 @@
 """
 
 # TODO: прочитайте цену, количество и процент скидки
+price = float(input())
+quantity = int(input())
+discount_percent = int(input())
 
 # TODO: вычислите и выведите три строки чека
+cost = price * quantity
+discount = cost * discount_percent / 100
+to_pay = cost - discount
 
+print(f'Стоимость: {round(cost, 2)}')
+print(f'Скидка: {round(discount, 2)}')
+print(f'К оплате: {round(to_pay, 2)}')

@@ -20,6 +20,11 @@
 """
 
 # TODO: прочитайте число n
+n = int(input())
 
 # TODO: выведите сумму цифр с подписью
+hundreds = n // 100
+tens = n // 10 % 10
+units = n % 10
 
+print(f'Сумма цифр: {hundreds + tens + units}')

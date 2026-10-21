@@ -24,6 +24,10 @@ False
 """
 
 # TODO: прочитайте a и b
+a = int(input())
+b = int(input())
 
 # TODO: выведите результаты трёх сравнений
-
+print(a > b)
+print(a < b)
+print(a == b)

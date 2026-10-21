@@ -24,6 +24,11 @@
 """
 
 # TODO: прочитайте сумму, ставку и срок
+amount = float(input())
+rate = int(input())
+years = int(input())
 
 # TODO: вычислите итог по формуле сложного процента и выведите с округлением
+total = amount * (1 + rate / 100) ** years
 
+print(f'Итоговая сумма: {round(total, 2)}')

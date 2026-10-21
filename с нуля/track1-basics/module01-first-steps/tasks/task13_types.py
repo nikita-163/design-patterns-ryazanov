@@ -22,6 +22,9 @@ print(type(s)) сам напечатает <class 'str'>.
 """
 
 # TODO: прочитайте строку s
+s = input()
 
 # TODO: выведите type(s), type(int(s)) и type(float(s))
-
+print(type(s))
+print(type(int(s)))
+print(type(float(s)))
