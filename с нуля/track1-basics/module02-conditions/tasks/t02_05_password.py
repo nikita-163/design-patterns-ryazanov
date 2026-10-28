@@ -13,4 +13,10 @@ python123
 """
 
 # TODO: прочитайте пароль и сравните его с эталоном
+password = input()
+
+if password == 'python123':
+    print('доступ разрешён')
+else:
+    print('доступ запрещён')
 

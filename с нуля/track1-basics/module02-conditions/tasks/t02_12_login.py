@@ -14,4 +14,11 @@ qwerty
 """
 
 # TODO: прочитайте логин и пароль, проверьте оба условия сразу (and)
+login = input()
+password = input()
+
+if login == 'admin' and password == 'qwerty':
+    print('вход выполнен')
+else:
+    print('неверный логин или пароль')
 

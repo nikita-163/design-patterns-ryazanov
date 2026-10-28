@@ -16,4 +16,12 @@
 """
 
 # TODO: прочитайте стороны и проверьте неравенство треугольника
+a = float(input())
+b = float(input())
+c = float(input())
+
+if a < b + c and b < a + c and c < a + b:
+    print('да')
+else:
+    print('нет')
 

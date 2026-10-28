@@ -23,4 +23,17 @@
 """
 
 # TODO: прочитайте вес и рост, вычислите ИМТ и выведите категорию
+weight = float(input())
+height = float(input())
+
+bmi = weight / height ** 2
+
+if bmi < 18.5:
+    print('недостаточный')
+elif bmi < 25:
+    print('норма')
+elif bmi < 30:
+    print('избыточный')
+else:
+    print('ожирение')
 

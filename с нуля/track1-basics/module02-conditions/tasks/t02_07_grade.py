@@ -17,4 +17,14 @@
 """
 
 # TODO: прочитайте балл и выведите оценку по шкале
+score = int(input())
+
+if score >= 90:
+    print('отлично')
+elif score >= 75:
+    print('хорошо')
+elif score >= 60:
+    print('удовлетворительно')
+else:
+    print('неудовлетворительно')
 

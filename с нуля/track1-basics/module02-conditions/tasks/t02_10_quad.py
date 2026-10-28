@@ -22,4 +22,22 @@
 import math
 
 # TODO: прочитайте коэффициенты, вычислите дискриминант и выведите корни
+a = int(input())
+b = int(input())
+c = int(input())
+
+d = b ** 2 - 4 * a * c
+
+if d < 0:
+    print('нет корней')
+elif d == 0:
+    x = -b / (2 * a)
+    print(f'один корень: {round(x, 3)}')
+else:
+    root_d = math.sqrt(d)
+    x1 = (-b - root_d) / (2 * a)
+    x2 = (-b + root_d) / (2 * a)
+    if x1 > x2:
+        x1, x2 = x2, x1
+    print(f'два корня: {round(x1, 3)} {round(x2, 3)}')
 
