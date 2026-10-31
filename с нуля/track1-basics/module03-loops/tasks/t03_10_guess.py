@@ -24,4 +24,13 @@
 TARGET = 42
 
 # TODO: в цикле while читайте числа и выводите подсказки, пока не угадают
+while True:
+    guess = int(input())
+    if guess < TARGET:
+        print('больше')
+    elif guess > TARGET:
+        print('меньше')
+    else:
+        print('угадал')
+        break
 

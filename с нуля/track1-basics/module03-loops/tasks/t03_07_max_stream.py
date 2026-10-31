@@ -23,4 +23,11 @@
 n = int(input())
 
 # TODO: прочитайте n чисел в цикле и найдите наибольшее
+biggest = int(input())
+for _ in range(n - 1):
+    x = int(input())
+    if x > biggest:
+        biggest = x
+
+print(biggest)
 

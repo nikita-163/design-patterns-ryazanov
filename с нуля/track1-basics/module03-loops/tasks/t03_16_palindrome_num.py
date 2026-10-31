@@ -15,4 +15,13 @@ True
 """
 
 # TODO: переверните число циклом и сравните с исходным
+n = int(input())
+
+rest = n
+reversed_n = 0
+while rest > 0:
+    reversed_n = reversed_n * 10 + rest % 10
+    rest //= 10
+
+print(n == reversed_n)
 

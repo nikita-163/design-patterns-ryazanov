@@ -17,4 +17,9 @@
 n = int(input())
 
 # TODO: накопите сумму 1 + 2 + ... + n в цикле и выведите её
+total = 0
+for i in range(1, n + 1):
+    total += i
+
+print(total)
 
