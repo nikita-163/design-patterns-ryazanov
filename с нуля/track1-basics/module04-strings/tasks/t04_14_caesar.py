@@ -21,4 +21,16 @@ zab
 """
 
 # TODO: прочитайте сдвиг и строку, зашифруйте каждую букву
+shift = int(input())
+text = input()
+
+result = ''
+for ch in text:
+    if ch == ' ':
+        result += ch
+    else:
+        code = (ord(ch) - ord('a') + shift) % 26
+        result += chr(code + ord('a'))
+
+print(result)
 

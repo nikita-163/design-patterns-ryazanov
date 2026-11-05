@@ -14,4 +14,8 @@
 """
 
 # TODO: прочитайте текст и букву, посчитайте вхождения
+text = input()
+letter = input()
+
+print(text.count(letter))
 

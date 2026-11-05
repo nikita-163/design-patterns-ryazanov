@@ -13,4 +13,7 @@
 """
 
 # TODO: замените пробелы на подчёркивания
+filename = input()
+
+print(filename.replace(' ', '_'))
 

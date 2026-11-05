@@ -13,4 +13,7 @@ True
 """
 
 # TODO: приведите фразу к нижнему регистру, уберите пробелы и сравните с обратной
+phrase = input().lower().replace(' ', '')
+
+print(phrase == phrase[::-1])
 

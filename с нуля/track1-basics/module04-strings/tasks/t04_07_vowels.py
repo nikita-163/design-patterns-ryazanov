@@ -15,4 +15,12 @@
 VOWELS = "аеёиоуыэюя"
 
 # TODO: переберите символы строки в нижнем регистре и посчитайте гласные
+text = input().lower()
+
+count = 0
+for ch in text:
+    if ch in VOWELS:
+        count += 1
+
+print(count)
 

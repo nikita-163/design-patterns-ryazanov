@@ -17,4 +17,10 @@ True
 """
 
 # TODO: проверьте все три правила (пригодятся count и find)
+email = input()
+
+at_count = email.count('@')
+at_pos = email.find('@')
+
+print(at_count == 1 and 0 < at_pos < len(email) - 1 and email[at_pos + 1:].count('.') > 0)
 

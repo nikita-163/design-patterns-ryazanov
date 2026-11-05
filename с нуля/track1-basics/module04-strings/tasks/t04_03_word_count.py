@@ -13,4 +13,7 @@
 """
 
 # TODO: разбейте строку на слова и посчитайте их
+words = input().split()
+
+print(len(words))
 

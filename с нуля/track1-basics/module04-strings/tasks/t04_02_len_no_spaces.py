@@ -12,4 +12,7 @@
 """
 
 # TODO: уберите пробелы и посчитайте длину
+text = input()
+
+print(len(text.replace(' ', '')))
 

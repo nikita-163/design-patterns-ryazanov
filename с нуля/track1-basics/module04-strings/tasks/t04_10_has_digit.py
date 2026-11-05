@@ -13,4 +13,13 @@ True
 """
 
 # TODO: переберите символы и проверьте isdigit()
+text = input()
+
+has_digit = False
+for ch in text:
+    if ch.isdigit():
+        has_digit = True
+        break
+
+print(has_digit)
 
