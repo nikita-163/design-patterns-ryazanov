@@ -14,4 +14,19 @@
 """
 
 # TODO: соберите список без повторов и выведите его
+parts = input().split()
+numbers = []
+for p in parts:
+    numbers.append(int(p))
+
+unique = []
+for x in numbers:
+    if x not in unique:
+        unique.append(x)
+
+result = []
+for x in unique:
+    result.append(str(x))
+
+print(' '.join(result))
 

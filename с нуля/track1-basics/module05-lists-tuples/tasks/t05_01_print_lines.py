@@ -15,4 +15,11 @@
 """
 
 # TODO: разберите строку и выведите элементы построчно
+parts = input().split()
+numbers = []
+for p in parts:
+    numbers.append(int(p))
+
+for x in numbers:
+    print(x)
 

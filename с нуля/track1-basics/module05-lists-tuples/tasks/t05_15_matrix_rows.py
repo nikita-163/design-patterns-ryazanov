@@ -18,4 +18,16 @@
 """
 
 # TODO: прочитайте матрицу в список строк и просуммируйте каждую
+n = int(input())
+m = int(input())
+
+matrix = []
+for _ in range(n):
+    row = []
+    for p in input().split():
+        row.append(int(p))
+    matrix.append(row)
+
+for row in matrix:
+    print(sum(row))
 

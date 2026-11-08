@@ -18,4 +18,17 @@
 """
 
 # TODO: накопите сумму и количество в цикле
+parts = input().split()
+numbers = []
+for p in parts:
+    numbers.append(int(p))
+
+total = 0
+count = 0
+for x in numbers:
+    total += x
+    count += 1
+
+print(f'Сумма: {total}')
+print(f'Количество: {count}')
 

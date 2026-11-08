@@ -18,4 +18,10 @@
 """
 
 # TODO: соберите результат из двух срезов: последние k и всё остальное
+parts = input().split()
+k = int(input())
+
+cut = len(parts) - k
+
+print(' '.join(parts[cut:] + parts[:cut]))
 

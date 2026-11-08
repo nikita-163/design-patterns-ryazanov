@@ -15,4 +15,10 @@
 """
 
 # TODO: выведите round(sum(a) / len(a), 2)
+parts = input().split()
+numbers = []
+for p in parts:
+    numbers.append(int(p))
+
+print(round(sum(numbers) / len(numbers), 2))
 

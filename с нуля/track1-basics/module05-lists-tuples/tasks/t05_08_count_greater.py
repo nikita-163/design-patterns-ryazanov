@@ -14,4 +14,16 @@
 """
 
 # TODO: посчитайте элементы, большие k
+parts = input().split()
+numbers = []
+for p in parts:
+    numbers.append(int(p))
+k = int(input())
+
+count = 0
+for x in numbers:
+    if x > k:
+        count += 1
+
+print(count)
 

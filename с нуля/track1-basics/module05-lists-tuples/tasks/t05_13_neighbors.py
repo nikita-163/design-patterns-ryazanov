@@ -13,4 +13,16 @@ True
 """
 
 # TODO: переберите соседние пары (a[i] и a[i+1]) и сравните
+parts = input().split()
+numbers = []
+for p in parts:
+    numbers.append(int(p))
+
+found = False
+for i in range(len(numbers) - 1):
+    if numbers[i] == numbers[i + 1]:
+        found = True
+        break
+
+print(found)
 

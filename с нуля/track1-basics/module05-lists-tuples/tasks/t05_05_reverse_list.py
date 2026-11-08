@@ -13,4 +13,7 @@
 """
 
 # TODO: разверните список и соберите строку
+parts = input().split()
+
+print(' '.join(parts[::-1]))
 

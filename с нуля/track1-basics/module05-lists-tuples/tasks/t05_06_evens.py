@@ -14,4 +14,16 @@
 """
 
 # TODO: соберите чётные числа в новый список и выведите его
+parts = input().split()
+numbers = []
+for p in parts:
+    numbers.append(int(p))
+
+evens = []
+for x in numbers:
+    if x % 2 == 0:
+        evens.append(str(x))
+
+if evens:
+    print(' '.join(evens))
 
