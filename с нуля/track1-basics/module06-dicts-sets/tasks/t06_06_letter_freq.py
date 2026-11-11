@@ -14,4 +14,14 @@
 """
 
 # TODO: частоты букв словарём, вывод по отсортированным ключам
+text = input().lower().replace(' ', '')
+
+counts = {}
+for ch in text:
+    if ch not in counts:
+        counts[ch] = 0
+    counts[ch] += 1
+
+for ch in sorted(counts):
+    print(f'{ch}: {counts[ch]}')
 

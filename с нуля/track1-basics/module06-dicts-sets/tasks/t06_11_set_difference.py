@@ -15,4 +15,18 @@
 """
 
 # TODO: разность множеств, сортировка, вывод
+first = set()
+for p in input().split():
+    first.add(int(p))
+
+second = set()
+for p in input().split():
+    second.add(int(p))
+
+result = []
+for x in sorted(first - second):
+    result.append(str(x))
+
+if result:
+    print(' '.join(result))
 

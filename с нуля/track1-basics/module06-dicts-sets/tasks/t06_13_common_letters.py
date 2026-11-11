@@ -15,4 +15,11 @@
 """
 
 # TODO: множества букв двух строк, пересечение, сортировка
+first = set(input().lower().replace(' ', ''))
+second = set(input().lower().replace(' ', ''))
+
+common = first & second
+
+if common:
+    print(' '.join(sorted(common)))
 

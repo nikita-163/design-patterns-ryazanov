@@ -19,4 +19,15 @@
 """
 
 # TODO: словарь «имя → список оценок», затем средние
+n = int(input())
+
+marks = {}
+for _ in range(n):
+    name, subject, mark = input().split()
+    if name not in marks:
+        marks[name] = []
+    marks[name].append(int(mark))
+
+for name, values in marks.items():
+    print(f'{name} {round(sum(values) / len(values), 2)}')
 

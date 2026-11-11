@@ -12,4 +12,9 @@
 """
 
 # TODO: переведите числа в множество и посчитайте элементы
+unique = set()
+for p in input().split():
+    unique.add(int(p))
+
+print(len(unique))
 

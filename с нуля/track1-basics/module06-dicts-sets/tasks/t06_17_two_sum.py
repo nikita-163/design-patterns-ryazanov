@@ -16,4 +16,16 @@
 """
 
 # TODO: найдите пару индексов с нужной суммой
+numbers = []
+for p in input().split():
+    numbers.append(int(p))
+target = int(input())
+
+seen = {}
+for i in range(len(numbers)):
+    need = target - numbers[i]
+    if need in seen:
+        print(seen[need], i)
+        break
+    seen[numbers[i]] = i
 

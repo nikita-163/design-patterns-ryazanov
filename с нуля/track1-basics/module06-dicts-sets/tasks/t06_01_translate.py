@@ -20,4 +20,7 @@ DICTIONARY = {
 }
 
 # TODO: прочитайте слово и найдите перевод
+word = input()
+
+print(DICTIONARY.get(word, 'нет в словаре'))
 

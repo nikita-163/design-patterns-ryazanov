@@ -15,4 +15,14 @@
 """
 
 # TODO: словарь «длина → список слов», вывод по возрастанию длин
+groups = {}
+for word in input().split():
+    length = len(word)
+    if length not in groups:
+        groups[length] = []
+    groups[length].append(word)
+
+for length in sorted(groups):
+    line = ' '.join(groups[length])
+    print(f'{length}: {line}')
 

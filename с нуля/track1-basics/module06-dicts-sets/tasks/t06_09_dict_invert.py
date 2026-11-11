@@ -19,4 +19,13 @@ three три
 """
 
 # TODO: постройте обратный словарь и выведите по sorted-ключам
+n = int(input())
+
+inverted = {}
+for _ in range(n):
+    english, russian = input().split()
+    inverted[russian] = english
+
+for russian in sorted(inverted):
+    print(f'{russian}: {inverted[russian]}')
 

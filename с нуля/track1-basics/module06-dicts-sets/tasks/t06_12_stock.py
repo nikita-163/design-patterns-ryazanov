@@ -24,4 +24,18 @@
 """
 
 # TODO: соберите словарь остатков и примените операции
+n = int(input())
+
+stock = {}
+for _ in range(n):
+    name, quantity = input().split()
+    stock[name] = int(quantity)
+
+m = int(input())
+for _ in range(m):
+    name, delta = input().split()
+    stock[name] += int(delta)
+
+for name, quantity in stock.items():
+    print(f'{name}: {quantity}')
 

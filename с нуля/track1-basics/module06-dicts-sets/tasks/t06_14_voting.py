@@ -21,4 +21,21 @@
 """
 
 # TODO: подсчёт голосов словарём и выбор победителя с учётом ничьих
+n = int(input())
+
+votes = {}
+for _ in range(n):
+    name = input()
+    if name not in votes:
+        votes[name] = 0
+    votes[name] += 1
+
+winner = ''
+best_count = 0
+for name in sorted(votes):
+    if votes[name] > best_count:
+        winner = name
+        best_count = votes[name]
+
+print(f'{winner} {best_count}')
 
