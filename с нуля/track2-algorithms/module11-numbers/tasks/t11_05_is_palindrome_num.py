@@ -14,4 +14,5 @@ is_palindrome_num(123)   → False
 
 def is_palindrome_num(n):
     # TODO: str(n) и сравнение с перевёрнутой
-    pass
+    text = str(n)
+    return text == text[::-1]

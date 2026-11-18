@@ -14,4 +14,8 @@ binary_str(1)  → "1"
 
 def binary_str(n):
     # TODO: забирайте остатки n % 2, уменьшая n //= 2, потом разверните
-    pass
+    bits = ''
+    while n > 0:
+        bits += str(n % 2)
+        n //= 2
+    return bits[::-1]

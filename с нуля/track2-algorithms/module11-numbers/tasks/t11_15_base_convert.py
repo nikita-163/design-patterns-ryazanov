@@ -13,6 +13,13 @@ base_convert(7, 7)    → "10"
 """
 
 
+DIGITS = '0123456789ABCDEF'
+
+
 def base_convert(n, base):
     # TODO: как в 11-14, но цифры из "0123456789ABCDEF"
-    pass
+    result = ''
+    while n > 0:
+        result += DIGITS[n % base]
+        n //= base
+    return result[::-1]

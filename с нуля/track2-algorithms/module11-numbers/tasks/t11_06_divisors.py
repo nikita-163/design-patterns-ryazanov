@@ -13,4 +13,4 @@ divisors(7)  → [1, 7]
 
 def divisors(n):
     # TODO: включение по диапазону 1..n
-    pass
+    return [d for d in range(1, n + 1) if n % d == 0]

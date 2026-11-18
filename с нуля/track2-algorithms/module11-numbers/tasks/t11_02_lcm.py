@@ -11,6 +11,12 @@ lcm(7, 13) → 91
 """
 
 
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+
 def lcm(a, b):
     # TODO: a * b // gcd(a, b); gcd можно взять из задачи 11-01
-    pass
+    return a * b // gcd(a, b)
