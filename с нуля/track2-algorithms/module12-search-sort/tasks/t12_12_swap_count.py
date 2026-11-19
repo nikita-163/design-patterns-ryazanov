@@ -15,4 +15,11 @@ swap_count([3, 1, 2]) → 2
 
 def swap_count(items):
     # TODO: честный пузырёк со счётчиком обменов (или подсчёт инверсий)
-    pass
+    result = items[:]
+    swaps = 0
+    for i in range(len(result) - 1):
+        for j in range(len(result) - 1 - i):
+            if result[j] > result[j + 1]:
+                result[j], result[j + 1] = result[j + 1], result[j]
+                swaps += 1
+    return swaps

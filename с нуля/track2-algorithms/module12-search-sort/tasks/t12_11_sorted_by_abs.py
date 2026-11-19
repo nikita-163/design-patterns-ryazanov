@@ -13,4 +13,4 @@ sorted_by_abs([-5, 2, -1]) → [-1, 2, -5]
 
 def sorted_by_abs(items):
     # TODO: sorted(items, key=abs)
-    pass
+    return sorted(items, key=abs)

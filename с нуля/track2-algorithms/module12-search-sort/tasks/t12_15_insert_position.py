@@ -15,4 +15,7 @@ insert_position([1, 3, 5], 9) → 3
 
 def insert_position(items, x):
     # TODO: линейный проход до первого элемента >= x
-    pass
+    for i, item in enumerate(items):
+        if item >= x:
+            return i
+    return len(items)

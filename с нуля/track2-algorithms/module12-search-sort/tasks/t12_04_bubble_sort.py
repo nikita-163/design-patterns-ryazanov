@@ -13,4 +13,9 @@ bubble_sort([3, 1, 2]) → [1, 2, 3]
 
 def bubble_sort(items):
     # TODO: копия + соседние обмены по шпаргалке
-    pass
+    result = items[:]
+    for i in range(len(result) - 1):
+        for j in range(len(result) - 1 - i):
+            if result[j] > result[j + 1]:
+                result[j], result[j + 1] = result[j + 1], result[j]
+    return result

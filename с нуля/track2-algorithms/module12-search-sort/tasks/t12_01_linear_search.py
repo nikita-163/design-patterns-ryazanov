@@ -13,4 +13,7 @@ linear_search([5, 3, 7], 9)  → -1
 
 def linear_search(items, x):
     # TODO: перебор с enumerate
-    pass
+    for i, item in enumerate(items):
+        if item == x:
+            return i
+    return -1

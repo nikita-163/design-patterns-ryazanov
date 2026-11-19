@@ -13,4 +13,7 @@ is_sorted([1, 3, 2])    → False
 
 def is_sorted(items):
     # TODO: сравнить соседей; пустой и одноэлементный — True
-    pass
+    for i in range(len(items) - 1):
+        if items[i] > items[i + 1]:
+            return False
+    return True

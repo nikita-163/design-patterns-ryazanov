@@ -13,4 +13,4 @@ sort_words_by_length(["б", "аа", "в"]) → ["б", "в", "аа"]
 
 def sort_words_by_length(words):
     # TODO: sorted(words, key=lambda w: (len(w), w))
-    pass
+    return sorted(words, key=lambda w: (len(w), w))
